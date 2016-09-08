@@ -1,4 +1,4 @@
-package section.six.closure
+package section.six.closure.exercises
 
 @Grab(group = 'org.codehaus.gpars', module = 'gpars', version = '1.0.0')
 import groovyx.gpars.GParsPool
@@ -10,6 +10,7 @@ import groovyx.gpars.GParsPool
 
 List nums = [1, 42, 3, 4, 5, 91, 123, 14];
 nums.each { println it };
+nums.each { number -> println "${number} is equal to it" };
 nums.eachWithIndex { int entry, int key -> println "Key: ${key} - ${entry}" };
 
 

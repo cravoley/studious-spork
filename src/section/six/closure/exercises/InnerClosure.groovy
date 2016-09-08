@@ -1,4 +1,4 @@
-package section.six.closure
+package section.six.closure.exercises
 
 
 def doSomething(String msg, Closure action) {
